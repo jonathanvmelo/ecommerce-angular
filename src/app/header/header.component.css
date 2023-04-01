@@ -15,6 +15,7 @@
 .main-header__title--blue {
     color: var(--blue);
     font-size:60px;
+    cursor: pointer;
 }
 
 .main-header__title--orange {

@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -17,15 +18,14 @@ import { BarraPesquisaComponent } from './barra-pesquisa/barra-pesquisa.componen
     HeaderComponent,
     FooterComponent,
     NaoEncontradoComponent,
-    BarraPesquisaComponent,
+    BarraPesquisaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSnackBarModule,
-    FormsModule,
-
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,7 +10,7 @@ export class NotificacaoService {
     private snackBar: MatSnackBar
   ) { }
 
-  notificar(mensagem: string){
+  notificar(mensagem: string) {
     this.snackBar.open(mensagem, "Ok", {
       duration: 2000,
       verticalPosition: "top",
