@@ -7,16 +7,17 @@ const routes: Routes = [
   { path: "", redirectTo: "produtos", pathMatch: "full"},
   { path: 'carrinho', loadChildren: () => import('./carrinho/carrinho.module').then(m => m.CarrinhoModule) },
   { path: 'contato', loadChildren: () => import('./contato/contato.module').then(m => m.ContatoModule) },
-  {path: "**", component: NaoEncontradoComponent}
+  { path:"**", component: NaoEncontradoComponent},
 ];
 
 @NgModule({
-  declarations:[],
+  declarations: [],
   imports: [
     RouterModule.forRoot(routes)
   ],
+
   exports: [
-    RouterModule
+    RouterModule,
   ]
 })
 export class AppRoutingModule { }
